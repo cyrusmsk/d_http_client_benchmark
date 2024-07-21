@@ -38,20 +38,17 @@ args=(
   "--runs" "100"
   "-N"
   "--command-name" "curl"
+  "--command-name" "go-http-client"
+  "--command-name" "python-requests"
+  "--command-name" "python-urllib3"
   "--command-name" "rust-attohttpc"
   "--command-name" "rust-hyper"
   "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
-  "--command-name" "go-http-client"
-  "--command-name" "python-requests"
-  "--command-name" "python-urllib3"
+
 )
 
 commands=("curl -H 'Accept-Encoding: gzip' 'http://127.0.0.1:8000/get?range=1-1000'")
-
-for rust_bin in "${rust_bins[@]:1}"; do
-  commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
-done
 
 for go_bin in "${go_bins[@]}"; do
   commands+=("${cpwd}/${go_bin}/${go_bin}")
@@ -59,6 +56,10 @@ done
 
 for python_bin in "${python_bins[@]}"; do
   commands+=("python ${cpwd}/${python_bin}/${python_bin}.py")
+done
+
+for rust_bin in "${rust_bins[@]:1}"; do
+  commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
 done
 
 hyperfine "${args[@]}" "${commands[@]}" -i --export-json benchmarks.json --export-markdown benchmarks.md
