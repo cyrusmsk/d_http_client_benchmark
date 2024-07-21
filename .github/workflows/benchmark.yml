@@ -1,0 +1,72 @@
+name: Benchmark
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install cargo-binstall
+        uses: cargo-bins/cargo-binstall@main
+
+      - name: Install Hyperfine
+        run: cargo binstall -y hyperfine
+
+      - name: Install Zig
+        uses: goto-bus-stop/setup-zig@v2
+
+      - name: Run benchmarks
+        shell: bash
+        run: ./bench.sh
+
+      - name: Generate plot
+        shell: bash
+        run: |
+          wget https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/plot_whisker.py
+          python -m pip install -U matplotlib
+          python plot_whisker.py benchmarks.json -o benchmarks.png
+
+      - name: Upload output
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark-output
+          path: benchmarks.*
+
+      - name: Checkout output branch
+        uses: actions/checkout@v3
+        if: github.event_name != 'pull_request'
+        with:
+          ref: output
+          fetch-depth: 1
+
+      - name: Download output
+        uses: actions/download-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          name: benchmark-output
+
+      - name: Update the plot
+        run: |
+          cargo binstall -y menyoki
+          menyoki edit --invert benchmarks.png save benchmarks-bw.png
+
+      - name: Commit to the branch
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          set +e
+          git add benchmarks*
+          git commit -m "Update benchmarks"
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git output
