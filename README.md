@@ -1,10 +1,10 @@
 ## `d_http_clint_benchmark`
 
-This repository contains a HTTP client implementation for comparing the client's performance with implementations in other programming languages such as D, Zig, Rust and Go.
+This repository contains a HTTP client implementation for comparing the client's performance with implementations in other programming languages such as D, Rust and Go.
 
 ### Prerequisites
 
-- D, Zig, Rust/Cargo, Go, Python
+- D, Rust/Cargo, Go, Python
 - [Hyperfine](https://github.com/sharkdp/hyperfine) (for benchmarking)
 
 ### Benchmarking

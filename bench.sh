@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 cpwd="$(pwd)"
-required_bins=('zig' 'cargo' 'go' 'python' 'hyperfine')
-zig_bins=('zig-http-server' 'zig-http-client')
+required_bins=('cargo' 'go' 'python' 'hyperfine')
 rust_bins=('rust-http-server' 'rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
 python_bins=('python-requests', 'python-urllib3')
@@ -12,12 +11,6 @@ for required_bin in "${required_bins[@]}"; do
     echo "$required_bin is not installed!"
     exit 1
   fi
-done
-
-for zig_bin in "${zig_bins[@]}"; do
-  echo "Building ${zig_bin}..."
-  cd "${cpwd}/${zig_bin}" || exit
-  zig build -Doptimize=ReleaseFast
 done
 
 for rust_bin in "${rust_bins[@]}"; do
@@ -33,7 +26,6 @@ done
 
 cd "${cpwd}" || exit
 server_bins=(
-  "${zig_bins[0]}/zig-out/bin/${zig_bins[0]}"
   "${rust_bins[0]}/target/release/${rust_bins[0]}"
 )
 echo "Running the server..."
@@ -46,7 +38,6 @@ args=(
   "--runs" "100"
   "-N"
   "--command-name" "curl"
-  "--command-name" "zig-http-client"
   "--command-name" "rust-attohttpc"
   "--command-name" "rust-hyper"
   "--command-name" "rust-reqwest"
@@ -57,10 +48,6 @@ args=(
 )
 
 commands=("curl -H 'Accept-Encoding: gzip' 'http://127.0.0.1:8000/get?range=1-1000'")
-
-for zig_bin in "${zig_bins[@]:1}"; do
-  commands+=("${cpwd}/${zig_bin}/zig-out/bin/${zig_bin}")
-done
 
 for rust_bin in "${rust_bins[@]:1}"; do
   commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")

@@ -22,9 +22,6 @@ jobs:
       - name: Install Hyperfine
         run: cargo binstall -y hyperfine
 
-      - name: Install Zig
-        uses: goto-bus-stop/setup-zig@v2
-
       - name: Run benchmarks
         shell: bash
         run: ./bench.sh
