@@ -20,6 +20,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     .await?
                     .text()
                     .await?;
+                println!("{response}");
             }
 
             Ok(())

@@ -31,6 +31,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     )
                     .await?;
                 let body = hyper::body::aggregate(response.into_body()).await?;
+                let mut stdout = stdout().lock();
+                write!(&mut stdout, "{i} ")?;
+
+                std::io::copy(&mut body.reader(), &mut stdout)?;
+
+                stdout.write_all(b"\n")?;
+                stdout.flush()?;
             }
 
             Ok(())

@@ -7,6 +7,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .set("connection", "keep-alive")
             .call()?
             .into_string()?;
+        println!("{i} {response}");
     }
 
     Ok(())

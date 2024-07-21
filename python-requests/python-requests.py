@@ -5,3 +5,4 @@ s = requests.Session()
 
 for i in range(1000):
     response = s.get(url, headers={"connection": "keep-alive"})
+    print(response)
