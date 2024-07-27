@@ -43,7 +43,6 @@ args=(
   "--warmup" "10"
   "--runs" "100"
   "-N"
-  "--command-name" "curl"
   "--command-name" "go-http-client"
   "--command-name" "python-requests"
   "--command-name" "rust-ureq"
@@ -53,10 +52,8 @@ args=(
   "--command-name" "dlang-requests"
 )
 
-commands=("curl -H 'Accept-Encoding: gzip' 'http://127.0.0.1:8000/get?range=1-1000'")
-
 for go_bin in "${go_bins[@]}"; do
-  commands+=("${cpwd}/${go_bin}/${go_bin}")
+  commands=("${cpwd}/${go_bin}/${go_bin}")
 done
 
 for python_bin in "${python_bins[@]}"; do
