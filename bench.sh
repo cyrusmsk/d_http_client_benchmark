@@ -5,7 +5,7 @@ required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-http-server' 'rust-ureq')
 go_bins=('go-http-client')
 python_bins=('python-requests')
-dlang_bind=('dlang-curl', 'dlang-arsd', 'dlang-vibed', 'dlang-requests')
+dlang_bins=('dlang-curl', 'dlang-arsd', 'dlang-vibed', 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
   if ! command -v "${required_bin}" &>/dev/null; then
