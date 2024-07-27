@@ -2,10 +2,10 @@
 
 cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
-rust_bins=('rust-http-server' 'rust-ureq')
+rust_bins=('rust-http-server' 'rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
-python_bins=('python-requests')
-dlang_bins=('dlang-curl', 'dlang-arsd', 'dlang-vibed', 'dlang-requests')
+python_bins=('python-requests', 'python-urllib3')
+dlang_bins=('dlang-curl' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
   if ! command -v "${required_bin}" &>/dev/null; then
@@ -45,6 +45,10 @@ args=(
   "-N"
   "--command-name" "go-http-client"
   "--command-name" "python-requests"
+  "--command-name" "python-urllib3"
+  "--command-name" "rust-attohttpc"
+  "--command-name" "rust-hyper"
+  "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
   "--command-name" "dlang-curl"
   "--command-name" "dlang-arsd"
