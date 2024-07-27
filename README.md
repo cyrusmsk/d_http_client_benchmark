@@ -7,6 +7,14 @@ This repository contains a HTTP client implementation for comparing the client's
 - D, Rust/Cargo, Go, Python
 - [Hyperfine](https://github.com/sharkdp/hyperfine) (for benchmarking)
 
+### Results
+
+Results on a plot:
+![plot_whisker](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.png)
+
+Results in a table:
+![results](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.md)
+
 ### Benchmarking
 
 To run the benchmarks:
@@ -17,7 +25,7 @@ chmod +x bench.sh
 ```
 
 The result will be saved to `benchmarks.md` and `benchmarks.json`.
-
+Examples of the output below:
 ```
   rust-hyper ran
     1.01 ± 0.02 times faster than rust-ureq
@@ -49,8 +57,6 @@ Use the [JSON data](https://github.com/sharkdp/hyperfine#json) along with the [s
 git clone --depth 1 https://github.com/sharkdp/hyperfine
 python hyperfine/scripts/plot_whisker.py benchmarks.json
 ```
-
-![plot_whisker](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.png)
 
 ### Environment
 
