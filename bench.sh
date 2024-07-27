@@ -64,7 +64,7 @@ for rust_bin in "${rust_bins[@]:1}"; do
   commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
 done
 
-for dlang_bin in "${dlang_bins[@]:0}"; do
+for dlang_bin in "${dlang_bins[@]}"; do
   commands+=("${cpwd}/${dlang_bin}/${dlang_bin}")
 done
 
