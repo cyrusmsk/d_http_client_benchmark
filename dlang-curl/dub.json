@@ -1,0 +1,10 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2024, Sergei Giniatulin",
+	"description": "A minimal D application.",
+	"libs": ["curl"],
+	"license": "proprietary",
+	"name": "dlang-curl"
+}

@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-requests
+dlang-requests.so
+dlang-requests.dylib
+dlang-requests.dll
+dlang-requests.a
+dlang-requests.lib
+dlang-requests-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
+dub.selections.json

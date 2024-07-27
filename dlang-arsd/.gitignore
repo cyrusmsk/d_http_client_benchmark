@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-arsd
+dlang-arsd.so
+dlang-arsd.dylib
+dlang-arsd.dll
+dlang-arsd.a
+dlang-arsd.lib
+dlang-arsd-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
+dub.selections.json

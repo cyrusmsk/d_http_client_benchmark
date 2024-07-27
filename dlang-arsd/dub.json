@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2024, Sergei Giniatulin",
+	"dependencies": {
+		"arsd-official:http": "~>11.4.2"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "dlang-arsd"
+}

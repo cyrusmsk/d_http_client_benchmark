@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-vibed
+dlang-vibed.so
+dlang-vibed.dylib
+dlang-vibed.dll
+dlang-vibed.a
+dlang-vibed.lib
+dlang-vibed-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
+dub.selections.json

@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 cpwd="$(pwd)"
-required_bins=('cargo' 'go' 'python' 'hyperfine')
+required_bins=('cargo' 'go' 'python' 'dlang' 'hyperfine')
 rust_bins=('rust-http-server' 'rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
 python_bins=('python-requests', 'python-urllib3')
+dlang_bind=('dlang-curl', 'dlang-arsd', 'dlang-vibed', 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
   if ! command -v "${required_bin}" &>/dev/null; then
@@ -22,6 +23,11 @@ for go_bin in "${go_bins[@]}"; do
   echo "Building ${go_bin}..."
   cd "${cpwd}/${go_bin}" || exit
   go build "${go_bin}.go"
+done
+
+for dlang_bin in "${dlang_bins[@]}"; do
+  echo "Building ${dlang_bin}..."
+  dub build -b=release --root="${cpwd}/${dlang_bin}"
 done
 
 cd "${cpwd}" || exit
@@ -45,7 +51,10 @@ args=(
   "--command-name" "rust-hyper"
   "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
-
+  "--command-name" "dlang-curl"
+  "--command-name" "dlang-arsd"
+  "--command-name" "dlang-vibed"
+  "--command-name" "dlang-requests"
 )
 
 commands=("curl -H 'Accept-Encoding: gzip' 'http://127.0.0.1:8000/get?range=1-1000'")
@@ -60,6 +69,10 @@ done
 
 for rust_bin in "${rust_bins[@]:1}"; do
   commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
+done
+
+for dlang_bin in "${dlang_bins[@]:0}"; do
+  commands+=("${cpwd}/${dlang_bin}/${dlang_bin}")
 done
 
 hyperfine "${args[@]}" "${commands[@]}" -i --export-json benchmarks.json --export-markdown benchmarks.md
