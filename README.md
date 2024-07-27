@@ -11,9 +11,7 @@ This repository contains a HTTP client implementation for comparing the client's
 
 ![plot_whisker](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.png)
 
-Results in a table:
-
-[results](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.md)
+Results in a [table](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.md)
 
 ### Benchmarking
 
