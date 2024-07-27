@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cpwd="$(pwd)"
-required_bins=('cargo' 'go' 'python' 'dlang' 'hyperfine')
+required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-http-server' 'rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
 python_bins=('python-requests', 'python-urllib3')
