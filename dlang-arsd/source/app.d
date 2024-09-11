@@ -8,6 +8,6 @@ void main()
 	foreach(_; 0..1000) {
 		auto request = client.request(Uri("http://127.0.0.1:8000/get"));
 		auto content = request.waitForCompletion();
-		writeln(content.contentText);
+		//writeln(content.contentText);
 	}
 }
