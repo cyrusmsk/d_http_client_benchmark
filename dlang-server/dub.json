@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2024, Sergei Giniatulin",
+	"dependencies": {
+		"serverino": "~>0.7.11"
+	},
+	"description": "D server for HTTP clients testing",
+	"license": "proprietary",
+	"name": "dlang-server"
+}
