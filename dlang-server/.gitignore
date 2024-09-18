@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-server
+dlang-server.so
+dlang-server.dylib
+dlang-server.dll
+dlang-server.a
+dlang-server.lib
+dlang-server-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

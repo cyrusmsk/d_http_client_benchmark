@@ -4,7 +4,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .header("connection", "keep-alive")
             .send()?
             .text()?;
-            println!("{i} {response}");
+            #println!("{i} {response}");
     }
 
     Ok(())

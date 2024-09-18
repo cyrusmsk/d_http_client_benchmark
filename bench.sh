@@ -2,10 +2,10 @@
 
 cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
-rust_bins=('rust-http-server' 'rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
+rust_bins=('rust-attohttpc' 'rust-hyper' 'rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
 python_bins=('python-requests', 'python-urllib3')
-dlang_bins=('dlang-arsd' 'dlang-vibed' 'dlang-requests')
+dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
   if ! command -v "${required_bin}" &>/dev/null; then
@@ -32,7 +32,7 @@ done
 
 cd "${cpwd}" || exit
 server_bins=(
-  "${rust_bins[0]}/target/release/${rust_bins[0]}"
+  "${dlang_bins[0]}/${rust_bins[0]}"
 )
 echo "Running the server..."
 "${cpwd}/${server_bins[0]}" &
@@ -63,11 +63,11 @@ for python_bin in "${python_bins[@]}"; do
   commands+=("python ${cpwd}/${python_bin}/${python_bin}.py")
 done
 
-for rust_bin in "${rust_bins[@]:1}"; do
+for rust_bin in "${rust_bins[@]}"; do
   commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
 done
 
-for dlang_bin in "${dlang_bins[@]}"; do
+for dlang_bin in "${dlang_bins[@]:1}"; do
   commands+=("${cpwd}/${dlang_bin}/${dlang_bin}")
 done
 
