@@ -32,7 +32,7 @@ done
 
 cd "${cpwd}" || exit
 server_bins=(
-  "${dlang_bins[0]}/${rust_bins[0]}"
+  "${dlang_bins[0]}/${dlang_bins[0]}"
 )
 echo "Running the server..."
 "${cpwd}/${server_bins[0]}" &
