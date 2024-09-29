@@ -41,6 +41,6 @@ func main() {
 			fmt.Println("Error reading response:", err)
 			return
 		}
-		//fmt.Println(string(body))
 	}
+    fmt.Println("Finished")
 }
