@@ -17,7 +17,7 @@ mixin ServerinoMain;
 
 @endpoint void hello(Request req, Output output) {
     if (req.uri == "/get" && req.method == Request.Method.Get)
-        output ~= "Dlang ser";
+        output ~= "1";
     else
         if (req.uri.startsWith("/user/") && req.method == Request.Method.Get)
             output ~= req.uri.split("/user/")[1];

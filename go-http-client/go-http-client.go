@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+    "strconv"
 	"io/ioutil"
 	"net"
 	"net/http"
@@ -20,6 +21,7 @@ func main() {
 		Transport: transport,
 	}
 
+    result: int
 	for i := 0; i < 1000; i++ {
 		req, err := http.NewRequest(http.MethodGet, "http://127.0.0.1:8000/get", nil)
 		if err != nil {
@@ -41,6 +43,7 @@ func main() {
 			fmt.Println("Error reading response:", err)
 			return
 		}
+        result = result + strconv.Atoi(body) 
 	}
-    fmt.Println("Finished")
+	fmt.Println("Result:", result)
 }
