@@ -21,7 +21,7 @@ func main() {
 		Transport: transport,
 	}
 
-    var result int = 0
+    var result uint64 = 0
 	for i := 0; i < 1000; i++ {
 		req, err := http.NewRequest(http.MethodGet, "http://127.0.0.1:8000/get", nil)
 		if err != nil {
@@ -44,7 +44,7 @@ func main() {
 			return
 		}
         data := binary.BigEndian.Uint64(body)
-        result += body
+        result += data
 	}
 	fmt.Println("Result:", result)
 }
