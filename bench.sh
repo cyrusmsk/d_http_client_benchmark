@@ -5,8 +5,8 @@ required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
 dotnet_bins=('dotnet-http-client')
-python_bins=('python-requests' 'python-urllib' 'python-httpx')
-dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
+python_bins=('python-requests' 'python-httpx')
+dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
   if ! command -v "${required_bin}" &>/dev/null; then
@@ -53,12 +53,10 @@ args=(
   "--command-name" "go-http-client"
   "--command-name" "dotnet-http-client"
   "--command-name" "python-requests"
-  "--command-name" "python-urllib"
   "--command-name" "python-httpx"
   "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
   "--command-name" "dlang-arsd"
-  "--command-name" "dlang-vibed"
   "--command-name" "dlang-requests"
 )
 
