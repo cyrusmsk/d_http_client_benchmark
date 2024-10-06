@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-    "encoding/binary"
+	"strconv"
 	"io/ioutil"
 	"net"
 	"net/http"
@@ -21,8 +21,8 @@ func main() {
 		Transport: transport,
 	}
 
-    var result uint64 = 0
-	for i := 0; i < 1000; i++ {
+    var result = 0
+	for i := 0; i < 5000; i++ {
 		req, err := http.NewRequest(http.MethodGet, "http://127.0.0.1:8000/get", nil)
 		if err != nil {
 			fmt.Println("Error creating GET request:", err)
@@ -43,8 +43,12 @@ func main() {
 			fmt.Println("Error reading response:", err)
 			return
 		}
-        data := binary.BigEndian.Uint64(body)
-        result += data
+        data, err := strconv.Atoi(string(body))
+		if err != nil {
+			fmt.Println("Error parsing int:", err)
+			return
+		}
+       	result += data
 	}
-	fmt.Println("Result:", result)
+	fmt.Println(result)
 }
