@@ -4,7 +4,7 @@ cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
-python_bins=('python-requests', 'python-urllib3')
+python_bins=('python-requests' 'python-httpx')
 dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
@@ -40,18 +40,20 @@ SERVER_PID=$!
 trap 'kill -9 $SERVER_PID' SIGINT SIGTERM
 
 args=(
-  "--warmup" "10"
-  "--runs" "100"
+  "--warmup" "5"
+  "--runs" "50"
   "-N"
   "--command-name" "go-http-client"
-  "--command-name" "python-urllib3"
   "--command-name" "python-requests"
+  "--command-name" "python-httpx"
   "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
   "--command-name" "dlang-arsd"
   "--command-name" "dlang-vibed"
   "--command-name" "dlang-requests"
 )
+
+sleep 2
 
 for go_bin in "${go_bins[@]}"; do
   commands=("${cpwd}/${go_bin}/${go_bin}")
@@ -70,6 +72,6 @@ for dlang_bin in "${dlang_bins[@]:1}"; do
 done
 
 hyperfine "${args[@]}" "${commands[@]}" -i --export-json benchmarks.json --export-markdown benchmarks.md
-sed -i "s|$cpwd\/||g" benchmarks.*
+sed -i "s|${cpwd}\/||g" benchmarks.*
 
 kill -9 "$SERVER_PID"

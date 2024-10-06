@@ -35,7 +35,7 @@ python hyperfine/scripts/plot_whisker.py benchmarks.json
 
 ### TODO
 Add:
-- httpx python
+[x] httpx python
 
 ### Environment
 
