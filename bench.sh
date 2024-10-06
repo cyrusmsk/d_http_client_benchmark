@@ -4,6 +4,7 @@ cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
+dotnet_bins=('dotnet-http-client')
 python_bins=('python-requests' 'python-urllib' 'python-httpx')
 dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
 
@@ -25,6 +26,12 @@ for go_bin in "${go_bins[@]}"; do
   go build "${go_bin}.go"
 done
 
+for dotnet_bin in "${dotnet_bins[@]}"; do
+  echo "Building ${dotnet_bin}..."
+  cd "${cpwd}/${dotnet_bin}" || exit
+  dotnet build --configuration Release
+done
+
 for dlang_bin in "${dlang_bins[@]}"; do
   echo "Building ${dlang_bin}..."
   dub build -b=release --root="${cpwd}/${dlang_bin}"
@@ -44,6 +51,7 @@ args=(
   "--runs" "50"
   "-N"
   "--command-name" "go-http-client"
+  "--command-name" "dotnet-http-client"
   "--command-name" "python-requests"
   "--command-name" "python-urllib"
   "--command-name" "python-httpx"
@@ -58,6 +66,10 @@ sleep 2
 
 for go_bin in "${go_bins[@]}"; do
   commands=("${cpwd}/${go_bin}/${go_bin}")
+done
+
+for dotnet_bin in "${dotnet_bins[@]}"; do
+  commands=("${cpwd}/bin/Release/net8.0/${dotnet_bin}")
 done
 
 for python_bin in "${python_bins[@]}"; do
