@@ -4,7 +4,7 @@ cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-reqwest' 'rust-ureq')
 go_bins=('go-http-client')
-python_bins=('python-requests' 'python-httpx')
+python_bins=('python-requests' 'python-urllib' 'python-httpx')
 dlang_bins=('dlang-server' 'dlang-arsd' 'dlang-vibed' 'dlang-requests')
 
 for required_bin in "${required_bins[@]}"; do
@@ -45,6 +45,7 @@ args=(
   "-N"
   "--command-name" "go-http-client"
   "--command-name" "python-requests"
+  "--command-name" "python-urllib"
   "--command-name" "python-httpx"
   "--command-name" "rust-reqwest"
   "--command-name" "rust-ureq"
