@@ -78,8 +78,9 @@ for python_bin in "${python_bins[@]}"; do
 done
 
 for r_bin in "${r_bin[@]}"; do
-  commands+=("Rscript ${cpwd}/${r_bin}/$r_bin}.r")
+  commands+=("Rscript ${cpwd}/${r_bin}/${r_bin}.r")
 done
+
 for rust_bin in "${rust_bins[@]}"; do
   commands+=("${cpwd}/${rust_bin}/target/release/${rust_bin}")
 done
