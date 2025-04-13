@@ -5,7 +5,7 @@ required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine' 'Rscript')
 rust_bins=('rust-ureq')
 go_bins=('go-http-client')
 dotnet_bins=('dotnet-http-client')
-python_bins=('python-requests' 'python-httpx')
+python_bins=('python-httpx')
 r_bins=('r-httr' 'r-httr2')
 dlang_bins=('dlang-server' 'dlang-requests')
 
@@ -53,7 +53,6 @@ args=(
   "-N"
   "--command-name" "go-http-client"
   "--command-name" "dotnet-http-client"
-  "--command-name" "python-requests"
   "--command-name" "python-httpx"
   "--command-name" "r-httr"
   "--command-name" "r-httr2"
