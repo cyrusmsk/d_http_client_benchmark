@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cpwd="$(pwd)"
-required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine' 'Rscript')
+required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
 rust_bins=('rust-ureq')
 go_bins=('go-http-client')
 dotnet_bins=('dotnet-http-client')
