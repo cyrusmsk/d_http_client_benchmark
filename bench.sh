@@ -2,10 +2,10 @@
 
 cpwd="$(pwd)"
 required_bins=('cargo' 'go' 'python' 'dub' 'hyperfine')
-rust_bins=('rust-ureq')
+rust_bins=('rust-ureq' 'rust-reqwest')
 go_bins=('go-http-client')
 dotnet_bins=('dotnet-http-client')
-python_bins=('python-httpx')
+python_bins=('python-requests' 'python-httpx')
 r_bins=('r-httr' 'r-httr2')
 dlang_bins=('dlang-server' 'dlang-requests')
 
@@ -53,10 +53,12 @@ args=(
   "-N"
   "--command-name" "go-http-client"
   "--command-name" "dotnet-http-client"
+  "--command-name" "python-requests"
   "--command-name" "python-httpx"
   "--command-name" "r-httr"
   "--command-name" "r-httr2"
   "--command-name" "rust-ureq"
+  "--command-name" "rust-reqwest"
   "--command-name" "dlang-requests"
 )
 
@@ -74,7 +76,7 @@ for python_bin in "${python_bins[@]}"; do
   commands+=("python ${cpwd}/${python_bin}/${python_bin}.py")
 done
 
-for r_bin in "${r_bin[@]}"; do
+for r_bin in "${r_bins[@]}"; do
   commands+=("Rscript ${cpwd}/${r_bin}/${r_bin}.r")
 done
 
