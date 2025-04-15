@@ -4,7 +4,7 @@ This repository contains a HTTP client implementation for comparing the client's
 
 ### Prerequisites
 
-- D, Rust, Go, Python
+- D, Rust, Go, Python, R
 - [Hyperfine](https://github.com/sharkdp/hyperfine) (for benchmarking)
 
 ### Results
@@ -35,7 +35,8 @@ python hyperfine/scripts/plot_whisker.py benchmarks.json
 
 ### TODO
 Add:
-[x] httpx python
+[x] httpx Python
+[x] httr(2) R
 
 ### Environment
 
@@ -51,6 +52,7 @@ To see the output for the latest run, check out the [`output`](https://github.co
 
 [`rust clients test`](https://shnatsel.medium.com/smoke-testing-rust-http-clients-b8f2ee5db4e6) - some details about HTTP clients and CURL problems (Medium article, 2020)
 
+[`python clients test`](https://github.com/perodriguezl/python-http-libraries-benchmark) - some python clients testing including RPS, handshake, throughput (github repo)
 ### License
 
 <sup>
