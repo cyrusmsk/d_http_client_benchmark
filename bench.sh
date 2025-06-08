@@ -36,7 +36,7 @@ done
 for dlang_bin in "${dlang_bins[@]}"; do
   echo "Building ${dlang_bin}..."
   cd "${cpwd}/${dlang_bin}" || exit
-  dub build -b=release --root="${cpwd}/${dlang_bin}"
+  dub build -b=release
 done
 
 cd "${cpwd}" || exit
