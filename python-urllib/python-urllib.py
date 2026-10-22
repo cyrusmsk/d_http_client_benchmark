@@ -1,10 +1,23 @@
+import os
+from concurrent.futures import ThreadPoolExecutor
+
 import urllib3
 
-url = "http://127.0.0.1:8000"
-conn = urllib3.connection_from_url(url)
+PATH = os.environ.get("BENCH_PATH", "/ping")
+COUNT = int(os.environ.get("BENCH_COUNT", "5000"))
+CONCURRENCY = max(1, int(os.environ.get("BENCH_CONCURRENCY", "1")))
 
-result = 0
-for i in range(5_000):
-    response = conn.request("GET", "/get", headers={"connection": "keep-alive"})
-    result = result + int(response.data)
+conn = urllib3.connection_from_url(
+    "http://127.0.0.1:8000", maxsize=CONCURRENCY
+)
+
+
+def fetch(_):
+    response = conn.request("GET", PATH, headers={"connection": "keep-alive"})
+    return len(response.data)
+
+
+with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
+    result = sum(executor.map(fetch, range(COUNT)))
+
 print(result)

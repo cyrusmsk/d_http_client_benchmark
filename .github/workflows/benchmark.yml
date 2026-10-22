@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -23,6 +24,16 @@ jobs:
       - name: Install Dlang
         uses: dlang-community/setup-dlang@v1
 
+      - name: Install Zig
+        uses: goto-bus-stop/setup-zig@v2
+        with:
+          version: 0.17.0
+
+      - name: Install Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.0"
+
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
@@ -30,13 +41,13 @@ jobs:
 
       - name: Install packages silently
         run: |
+          python -m pip install -U httpx requests urllib3 niquests
           Rscript -e "install.packages(c('httr', 'httr2'), repos='https://cloud.r-project.org', quiet=TRUE)"
-
-      - name: Install Hyperfine
-        run: cargo binstall -y hyperfine
 
       - name: Install DotNet
         uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0'
 
       - name: Run benchmarks
         shell: bash
@@ -45,15 +56,18 @@ jobs:
       - name: Generate plot
         shell: bash
         run: |
-          wget https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/plot_whisker.py
           python -m pip install -U matplotlib
           python plot_whisker.py benchmarks.json -o benchmarks.png
+          python plot_whisker.py benchmarks-python.json -o benchmarks-python.png
+          python plot_whisker.py benchmarks-r.json -o benchmarks-r.png
+          python plot_whisker.py benchmarks-rest.json -o benchmarks-rest.png
+          cp plot_whisker.py /tmp/plot_whisker.py
 
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
           name: benchmark-output
-          path: benchmarks.*
+          path: benchmarks*
 
       - name: Checkout output branch
         uses: actions/checkout@v4
@@ -69,9 +83,12 @@ jobs:
           name: benchmark-output
 
       - name: Update the plot
+        if: github.event_name != 'pull_request'
         run: |
           cargo binstall -y menyoki
-          menyoki edit --invert benchmarks.png save benchmarks-bw.png
+          for image in benchmarks.png benchmarks-python.png benchmarks-r.png benchmarks-rest.png; do
+            menyoki edit --invert "$image" save "${image%.png}-bw.png"
+          done
 
       - name: Commit to the branch
         if: github.event_name != 'pull_request'
@@ -79,7 +96,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
+          cp /tmp/plot_whisker.py plot_whisker.py
+          git rm -q --cached benchmarks.md 2>/dev/null || true
+          rm -f benchmarks.md
           set +e
-          git add benchmarks*
+          git add benchmarks* plot_whisker.py
           git commit -m "Update benchmarks"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git output
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git output
