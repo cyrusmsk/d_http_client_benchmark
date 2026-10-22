@@ -4,145 +4,145 @@
       "test": "A-warm-1",
       "command": "r-httr",
       "times": [
-        0.138729
+        9.695043
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-1",
       "command": "r-httr2",
       "times": [
-        0.140341
+        11.237097
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-10",
       "command": "r-httr",
       "times": [
-        0.143184
+        9.783739
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-10",
       "command": "r-httr2",
       "times": [
-        0.142245
+        9.988606
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-100",
       "command": "r-httr",
       "times": [
-        0.137519
+        9.787513
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-100",
       "command": "r-httr2",
       "times": [
-        0.140478
+        9.814909
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-500",
       "command": "r-httr",
       "times": [
-        0.142053
+        4.063326
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 4000"
     },
     {
       "test": "A-warm-500",
       "command": "r-httr2",
       "times": [
-        0.142278
+        3.941074
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 4000"
     },
     {
       "test": "C-body-64k",
       "command": "r-httr",
       "times": [
-        0.138753
+        3.341819
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 65536000"
     },
     {
       "test": "C-body-64k",
       "command": "r-httr2",
       "times": [
-        0.138782
+        3.117497
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 65536000"
     },
     {
       "test": "C-json-1k",
       "command": "r-httr",
       "times": [
-        0.140901
+        2.192226
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 1024000"
     },
     {
       "test": "C-json-1k",
       "command": "r-httr2",
       "times": [
-        0.140223
+        2.181578
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 1024000"
     },
     {
       "test": "C-large-1m",
       "command": "r-httr",
       "times": [
-        0.144079
+        2.296621
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 104857600"
     },
     {
       "test": "C-large-1m",
       "command": "r-httr2",
       "times": [
-        0.143606
+        2.547226
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 104857600"
     },
     {
       "test": "D-delay-10ms",
       "command": "r-httr",
       "times": [
-        0.142098
+        2.808018
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 400"
     },
     {
       "test": "D-delay-10ms",
       "command": "r-httr2",
       "times": [
-        0.142112
+        0.799171
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 400"
     },
     {
       "test": "error-status-404",
       "command": "r-httr",
       "times": [
-        0.135428
+        0.619459
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 1800"
     },
     {
       "test": "error-status-404",
       "command": "r-httr2",
       "times": [
-        0.137125
+        0.565874
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 0"
     }
   ]
 }

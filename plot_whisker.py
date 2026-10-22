@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Plot benchmark results as stacked bars, one bar per HTTP client."""
+"""Plot benchmark results as horizontal stacked bars, one bar per HTTP client."""
 
 import argparse
 import json
@@ -13,7 +13,7 @@ import numpy as np
 
 def label_for(command):
     name = os.path.basename(str(command))
-    for ext in (".py", ".swift", ".cpp", ".rs", ".go", ".cs", ".r"):
+    for ext in (".py", ".swift", ".cpp", ".rs", ".go", ".cs", ".r", ".zig"):
         if name.endswith(ext):
             name = name[: -len(ext)]
     return name
@@ -59,35 +59,39 @@ values = np.array(
     [[clients[client].get(test, 0.0) for test in test_names] for client in client_names]
 )
 
-fig, ax = plt.subplots(figsize=(max(8, len(client_names) * 0.9), 6))
+fig, ax = plt.subplots(figsize=(max(8, len(test_names) * 2.0), max(4, len(client_names) * 0.45)))
 
-bottom = np.zeros(len(client_names))
+left = np.zeros(len(client_names))
 cmap = plt.get_cmap("tab20")
 colors = [cmap(i % 20) for i in range(len(test_names))]
 
 for i, test in enumerate(test_names):
-    ax.bar(
+    ax.barh(
         client_names,
         values[:, i],
-        bottom=bottom,
+        left=left,
         color=colors[i],
         label=test,
         edgecolor="black",
         linewidth=0.4,
+        height=0.7,
     )
-    bottom += values[:, i]
+    left += values[:, i]
 
-for x, total in zip(client_names, bottom):
-    ax.text(x, total, f" {total:.3f}s", ha="center", va="bottom", fontsize=8)
+for y, total in zip(client_names, left):
+    ax.text(total, y, f" {total:.3f}s", va="center", ha="left", fontsize=8)
 
 if args.title:
     ax.set_title(args.title)
 
-ax.set_ylabel("Time [s]")
-ax.grid(axis="y")
-ax.set_ylim(0, None)
-plt.xticks(rotation=90)
-ax.legend(title="Test", loc="best", fontsize="small")
+ax.set_xlabel("Time [s]")
+ax.set_ylabel("HTTP client")
+ax.grid(axis="x")
+ax.set_xlim(0, left.max() * 1.15 if left.max() > 0 else 1)
+ax.invert_yaxis()
+ax.tick_params(axis="y", labelsize=9)
+plt.xticks(rotation=45)
+ax.legend(title="Test", loc="lower right", fontsize="small")
 plt.tight_layout()
 
 if args.output:

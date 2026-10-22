@@ -4,7 +4,7 @@
       "test": "A-warm-1",
       "command": "go-http-client",
       "times": [
-        0.382428
+        0.787123
       ],
       "stdout": "10000"
     },
@@ -12,7 +12,7 @@
       "test": "A-warm-1",
       "command": "dotnet-http-client",
       "times": [
-        0.377532
+        0.947581
       ],
       "stdout": "10000"
     },
@@ -20,7 +20,7 @@
       "test": "A-warm-1",
       "command": "python-httpx",
       "times": [
-        1.667858
+        2.884093
       ],
       "stdout": "10000"
     },
@@ -28,7 +28,7 @@
       "test": "A-warm-1",
       "command": "python-niquests",
       "times": [
-        1.881602
+        3.530538
       ],
       "stdout": "10000"
     },
@@ -36,7 +36,7 @@
       "test": "A-warm-1",
       "command": "python-requests",
       "times": [
-        2.298075
+        4.435916
       ],
       "stdout": "10000"
     },
@@ -44,7 +44,7 @@
       "test": "A-warm-1",
       "command": "python-urllib",
       "times": [
-        1.121607
+        2.244196
       ],
       "stdout": "10000"
     },
@@ -52,23 +52,23 @@
       "test": "A-warm-1",
       "command": "r-httr",
       "times": [
-        0.138729
+        9.695043
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-1",
       "command": "r-httr2",
       "times": [
-        0.140341
+        11.237097
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-1",
       "command": "rust-ureq",
       "times": [
-        0.255473
+        0.465244
       ],
       "stdout": "10000"
     },
@@ -76,7 +76,7 @@
       "test": "A-warm-1",
       "command": "rust-reqwest",
       "times": [
-        0.29865
+        0.615239
       ],
       "stdout": "10000"
     },
@@ -84,7 +84,7 @@
       "test": "A-warm-1",
       "command": "dlang-vibed",
       "times": [
-        0.264806
+        0.517714
       ],
       "stdout": "10000"
     },
@@ -92,7 +92,7 @@
       "test": "A-warm-1",
       "command": "dlang-arsd",
       "times": [
-        0.280055
+        0.51046
       ],
       "stdout": "10000"
     },
@@ -100,7 +100,7 @@
       "test": "A-warm-1",
       "command": "dlang-requests",
       "times": [
-        0.37415
+        0.650063
       ],
       "stdout": "10000"
     },
@@ -108,7 +108,7 @@
       "test": "A-warm-1",
       "command": "dlang-ae-http",
       "times": [
-        0.821937
+        1.399569
       ],
       "stdout": "10000"
     },
@@ -116,7 +116,7 @@
       "test": "A-warm-1",
       "command": "cpp-http-client",
       "times": [
-        0.23635
+        0.39161
       ],
       "stdout": "10000"
     },
@@ -124,7 +124,7 @@
       "test": "A-warm-1",
       "command": "swift-urlsession",
       "times": [
-        1.231117
+        2.389626
       ],
       "stdout": "10000"
     },
@@ -132,7 +132,7 @@
       "test": "A-warm-1",
       "command": "zig-http-client",
       "times": [
-        0.230692
+        0.377359
       ],
       "stdout": "10000"
     },
@@ -140,7 +140,7 @@
       "test": "A-warm-10",
       "command": "go-http-client",
       "times": [
-        0.112658
+        0.199549
       ],
       "stdout": "10000"
     },
@@ -148,7 +148,7 @@
       "test": "A-warm-10",
       "command": "dotnet-http-client",
       "times": [
-        0.186042
+        0.297422
       ],
       "stdout": "10000"
     },
@@ -156,7 +156,7 @@
       "test": "A-warm-10",
       "command": "python-httpx",
       "times": [
-        1.872782
+        3.451555
       ],
       "stdout": "10000"
     },
@@ -164,7 +164,7 @@
       "test": "A-warm-10",
       "command": "python-niquests",
       "times": [
-        2.017692
+        3.466443
       ],
       "stdout": "10000"
     },
@@ -172,7 +172,7 @@
       "test": "A-warm-10",
       "command": "python-requests",
       "times": [
-        2.575727
+        4.417803
       ],
       "stdout": "10000"
     },
@@ -180,7 +180,7 @@
       "test": "A-warm-10",
       "command": "python-urllib",
       "times": [
-        1.257917
+        2.264145
       ],
       "stdout": "10000"
     },
@@ -188,23 +188,23 @@
       "test": "A-warm-10",
       "command": "r-httr",
       "times": [
-        0.143184
+        9.783739
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-10",
       "command": "r-httr2",
       "times": [
-        0.142245
+        9.988606
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-10",
       "command": "rust-ureq",
       "times": [
-        0.093087
+        0.155739
       ],
       "stdout": "10000"
     },
@@ -212,7 +212,7 @@
       "test": "A-warm-10",
       "command": "rust-reqwest",
       "times": [
-        0.087762
+        0.153077
       ],
       "stdout": "10000"
     },
@@ -220,7 +220,7 @@
       "test": "A-warm-10",
       "command": "dlang-vibed",
       "times": [
-        0.085101
+        0.221225
       ],
       "stdout": "10000"
     },
@@ -228,7 +228,7 @@
       "test": "A-warm-10",
       "command": "dlang-arsd",
       "times": [
-        0.116631
+        0.208381
       ],
       "stdout": "10000"
     },
@@ -236,7 +236,7 @@
       "test": "A-warm-10",
       "command": "dlang-requests",
       "times": [
-        0.115482
+        0.176241
       ],
       "stdout": "10000"
     },
@@ -244,7 +244,7 @@
       "test": "A-warm-10",
       "command": "dlang-ae-http",
       "times": [
-        0.569663
+        0.851184
       ],
       "stdout": "10000"
     },
@@ -252,7 +252,7 @@
       "test": "A-warm-10",
       "command": "cpp-http-client",
       "times": [
-        0.089567
+        0.143831
       ],
       "stdout": "10000"
     },
@@ -260,7 +260,7 @@
       "test": "A-warm-10",
       "command": "swift-urlsession",
       "times": [
-        0.844971
+        1.712249
       ],
       "stdout": "10000"
     },
@@ -268,7 +268,7 @@
       "test": "A-warm-10",
       "command": "zig-http-client",
       "times": [
-        0.087203
+        0.153512
       ],
       "stdout": "10000"
     },
@@ -276,7 +276,7 @@
       "test": "A-warm-100",
       "command": "go-http-client",
       "times": [
-        0.127342
+        0.195261
       ],
       "stdout": "10000"
     },
@@ -284,7 +284,7 @@
       "test": "A-warm-100",
       "command": "dotnet-http-client",
       "times": [
-        0.194355
+        0.292833
       ],
       "stdout": "10000"
     },
@@ -292,7 +292,7 @@
       "test": "A-warm-100",
       "command": "python-httpx",
       "times": [
-        2.011701
+        3.507176
       ],
       "stdout": "10000"
     },
@@ -300,7 +300,7 @@
       "test": "A-warm-100",
       "command": "python-niquests",
       "times": [
-        2.352393
+        3.907542
       ],
       "stdout": "10000"
     },
@@ -308,7 +308,7 @@
       "test": "A-warm-100",
       "command": "python-requests",
       "times": [
-        2.933133
+        5.055771
       ],
       "stdout": "10000"
     },
@@ -316,7 +316,7 @@
       "test": "A-warm-100",
       "command": "python-urllib",
       "times": [
-        1.444735
+        2.517627
       ],
       "stdout": "10000"
     },
@@ -324,23 +324,23 @@
       "test": "A-warm-100",
       "command": "r-httr",
       "times": [
-        0.137519
+        9.787513
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-100",
       "command": "r-httr2",
       "times": [
-        0.140478
+        9.814909
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 10000"
     },
     {
       "test": "A-warm-100",
       "command": "rust-ureq",
       "times": [
-        0.100814
+        0.173555
       ],
       "stdout": "10000"
     },
@@ -348,7 +348,7 @@
       "test": "A-warm-100",
       "command": "rust-reqwest",
       "times": [
-        0.088799
+        0.157795
       ],
       "stdout": "10000"
     },
@@ -356,7 +356,7 @@
       "test": "A-warm-100",
       "command": "dlang-vibed",
       "times": [
-        0.095064
+        0.218319
       ],
       "stdout": "10000"
     },
@@ -364,7 +364,7 @@
       "test": "A-warm-100",
       "command": "dlang-arsd",
       "times": [
-        0.104442
+        0.175371
       ],
       "stdout": "10000"
     },
@@ -372,7 +372,7 @@
       "test": "A-warm-100",
       "command": "dlang-requests",
       "times": [
-        0.139636
+        0.204835
       ],
       "stdout": "10000"
     },
@@ -380,7 +380,7 @@
       "test": "A-warm-100",
       "command": "dlang-ae-http",
       "times": [
-        0.569176
+        0.840727
       ],
       "stdout": "10000"
     },
@@ -388,7 +388,7 @@
       "test": "A-warm-100",
       "command": "cpp-http-client",
       "times": [
-        0.097366
+        0.150829
       ],
       "stdout": "10000"
     },
@@ -396,7 +396,7 @@
       "test": "A-warm-100",
       "command": "swift-urlsession",
       "times": [
-        0.853597
+        1.715812
       ],
       "stdout": "10000"
     },
@@ -404,7 +404,7 @@
       "test": "A-warm-100",
       "command": "zig-http-client",
       "times": [
-        0.108666
+        0.169671
       ],
       "stdout": "10000"
     },
@@ -412,7 +412,7 @@
       "test": "A-warm-500",
       "command": "go-http-client",
       "times": [
-        0.090551
+        0.12913
       ],
       "stdout": "4000"
     },
@@ -420,7 +420,7 @@
       "test": "A-warm-500",
       "command": "dotnet-http-client",
       "times": [
-        0.173634
+        0.243753
       ],
       "stdout": "4000"
     },
@@ -428,7 +428,7 @@
       "test": "A-warm-500",
       "command": "python-httpx",
       "times": [
-        1.175412
+        1.727603
       ],
       "stdout": "4000"
     },
@@ -436,7 +436,7 @@
       "test": "A-warm-500",
       "command": "python-niquests",
       "times": [
-        1.071069
+        1.691894
       ],
       "stdout": "4000"
     },
@@ -444,7 +444,7 @@
       "test": "A-warm-500",
       "command": "python-requests",
       "times": [
-        1.34273
+        2.172317
       ],
       "stdout": "4000"
     },
@@ -452,7 +452,7 @@
       "test": "A-warm-500",
       "command": "python-urllib",
       "times": [
-        0.80374
+        1.239936
       ],
       "stdout": "4000"
     },
@@ -460,23 +460,23 @@
       "test": "A-warm-500",
       "command": "r-httr",
       "times": [
-        0.142053
+        4.063326
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 4000"
     },
     {
       "test": "A-warm-500",
       "command": "r-httr2",
       "times": [
-        0.142278
+        3.941074
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 4000"
     },
     {
       "test": "A-warm-500",
       "command": "rust-ureq",
       "times": [
-        0.079498
+        0.120414
       ],
       "stdout": "4000"
     },
@@ -484,7 +484,7 @@
       "test": "A-warm-500",
       "command": "rust-reqwest",
       "times": [
-        0.08898
+        0.124658
       ],
       "stdout": "4000"
     },
@@ -492,7 +492,7 @@
       "test": "A-warm-500",
       "command": "dlang-vibed",
       "times": [
-        0.098513
+        0.155968
       ],
       "stdout": "4000"
     },
@@ -500,7 +500,7 @@
       "test": "A-warm-500",
       "command": "dlang-arsd",
       "times": [
-        0.045049
+        0.092952
       ],
       "stdout": "4000"
     },
@@ -508,7 +508,7 @@
       "test": "A-warm-500",
       "command": "dlang-requests",
       "times": [
-        0.11672
+        0.157321
       ],
       "stdout": "4000"
     },
@@ -516,7 +516,7 @@
       "test": "A-warm-500",
       "command": "dlang-ae-http",
       "times": [
-        0.241922
+        0.345898
       ],
       "stdout": "4000"
     },
@@ -524,7 +524,7 @@
       "test": "A-warm-500",
       "command": "cpp-http-client",
       "times": [
-        0.070588
+        0.105184
       ],
       "stdout": "4000"
     },
@@ -532,7 +532,7 @@
       "test": "A-warm-500",
       "command": "swift-urlsession",
       "times": [
-        0.364671
+        0.705919
       ],
       "stdout": "4000"
     },
@@ -540,7 +540,7 @@
       "test": "A-warm-500",
       "command": "zig-http-client",
       "times": [
-        0.106579
+        0.160147
       ],
       "stdout": "4000"
     },
@@ -548,7 +548,7 @@
       "test": "C-body-64k",
       "command": "go-http-client",
       "times": [
-        0.401781
+        0.672272
       ],
       "stdout": "65536000"
     },
@@ -556,7 +556,7 @@
       "test": "C-body-64k",
       "command": "dotnet-http-client",
       "times": [
-        0.409484
+        0.697827
       ],
       "stdout": "65536000"
     },
@@ -564,7 +564,7 @@
       "test": "C-body-64k",
       "command": "python-httpx",
       "times": [
-        0.84168
+        1.392293
       ],
       "stdout": "65536000"
     },
@@ -572,7 +572,7 @@
       "test": "C-body-64k",
       "command": "python-niquests",
       "times": [
-        0.792083
+        1.185247
       ],
       "stdout": "65536000"
     },
@@ -580,7 +580,7 @@
       "test": "C-body-64k",
       "command": "python-requests",
       "times": [
-        0.895038
+        1.40776
       ],
       "stdout": "65536000"
     },
@@ -588,7 +588,7 @@
       "test": "C-body-64k",
       "command": "python-urllib",
       "times": [
-        0.596902
+        0.938302
       ],
       "stdout": "65536000"
     },
@@ -596,23 +596,23 @@
       "test": "C-body-64k",
       "command": "r-httr",
       "times": [
-        0.138753
+        3.341819
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 65536000"
     },
     {
       "test": "C-body-64k",
       "command": "r-httr2",
       "times": [
-        0.138782
+        3.117497
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 65536000"
     },
     {
       "test": "C-body-64k",
       "command": "rust-ureq",
       "times": [
-        0.309128
+        0.554713
       ],
       "stdout": "65536000"
     },
@@ -620,7 +620,7 @@
       "test": "C-body-64k",
       "command": "rust-reqwest",
       "times": [
-        0.314364
+        0.564072
       ],
       "stdout": "65536000"
     },
@@ -628,7 +628,7 @@
       "test": "C-body-64k",
       "command": "dlang-vibed",
       "times": [
-        0.312864
+        0.543311
       ],
       "stdout": "65536000"
     },
@@ -636,7 +636,7 @@
       "test": "C-body-64k",
       "command": "dlang-arsd",
       "times": [
-        0.328394
+        0.579109
       ],
       "stdout": "65536000"
     },
@@ -644,7 +644,7 @@
       "test": "C-body-64k",
       "command": "dlang-requests",
       "times": [
-        0.323176
+        0.559579
       ],
       "stdout": "65536000"
     },
@@ -652,7 +652,7 @@
       "test": "C-body-64k",
       "command": "dlang-ae-http",
       "times": [
-        0.410399
+        0.668787
       ],
       "stdout": "65536000"
     },
@@ -660,7 +660,7 @@
       "test": "C-body-64k",
       "command": "cpp-http-client",
       "times": [
-        0.308345
+        0.542954
       ],
       "stdout": "65536000"
     },
@@ -668,7 +668,7 @@
       "test": "C-body-64k",
       "command": "swift-urlsession",
       "times": [
-        0.417209
+        0.705549
       ],
       "stdout": "65536000"
     },
@@ -676,7 +676,7 @@
       "test": "C-body-64k",
       "command": "zig-http-client",
       "times": [
-        0.310472
+        0.533154
       ],
       "stdout": "65536000"
     },
@@ -684,7 +684,7 @@
       "test": "C-json-1k",
       "command": "go-http-client",
       "times": [
-        0.041599
+        0.059219
       ],
       "stdout": "1024000"
     },
@@ -692,7 +692,7 @@
       "test": "C-json-1k",
       "command": "dotnet-http-client",
       "times": [
-        0.123684
+        0.18096
       ],
       "stdout": "1024000"
     },
@@ -700,7 +700,7 @@
       "test": "C-json-1k",
       "command": "python-httpx",
       "times": [
-        0.558883
+        0.900791
       ],
       "stdout": "1024000"
     },
@@ -708,7 +708,7 @@
       "test": "C-json-1k",
       "command": "python-niquests",
       "times": [
-        0.651297
+        0.944851
       ],
       "stdout": "1024000"
     },
@@ -716,7 +716,7 @@
       "test": "C-json-1k",
       "command": "python-requests",
       "times": [
-        0.725369
+        1.128228
       ],
       "stdout": "1024000"
     },
@@ -724,7 +724,7 @@
       "test": "C-json-1k",
       "command": "python-urllib",
       "times": [
-        0.418483
+        0.620118
       ],
       "stdout": "1024000"
     },
@@ -732,23 +732,23 @@
       "test": "C-json-1k",
       "command": "r-httr",
       "times": [
-        0.140901
+        2.192226
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 1024000"
     },
     {
       "test": "C-json-1k",
       "command": "r-httr2",
       "times": [
-        0.140223
+        2.181578
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 1024000"
     },
     {
       "test": "C-json-1k",
       "command": "rust-ureq",
       "times": [
-        0.030207
+        0.048175
       ],
       "stdout": "1024000"
     },
@@ -756,7 +756,7 @@
       "test": "C-json-1k",
       "command": "rust-reqwest",
       "times": [
-        0.028926
+        0.048196
       ],
       "stdout": "1024000"
     },
@@ -764,7 +764,7 @@
       "test": "C-json-1k",
       "command": "dlang-vibed",
       "times": [
-        0.030831
+        0.05466
       ],
       "stdout": "1024000"
     },
@@ -772,7 +772,7 @@
       "test": "C-json-1k",
       "command": "dlang-arsd",
       "times": [
-        0.026414
+        0.046969
       ],
       "stdout": "1024000"
     },
@@ -780,7 +780,7 @@
       "test": "C-json-1k",
       "command": "dlang-requests",
       "times": [
-        0.043324
+        0.067504
       ],
       "stdout": "1024000"
     },
@@ -788,7 +788,7 @@
       "test": "C-json-1k",
       "command": "dlang-ae-http",
       "times": [
-        0.11465
+        0.160558
       ],
       "stdout": "1024000"
     },
@@ -796,7 +796,7 @@
       "test": "C-json-1k",
       "command": "cpp-http-client",
       "times": [
-        0.026236
+        0.03738
       ],
       "stdout": "1024000"
     },
@@ -804,7 +804,7 @@
       "test": "C-json-1k",
       "command": "swift-urlsession",
       "times": [
-        0.218388
+        0.369695
       ],
       "stdout": "1024000"
     },
@@ -812,7 +812,7 @@
       "test": "C-json-1k",
       "command": "zig-http-client",
       "times": [
-        0.034594
+        0.048886
       ],
       "stdout": "1024000"
     },
@@ -820,7 +820,7 @@
       "test": "C-large-1m",
       "command": "go-http-client",
       "times": [
-        0.53052
+        0.922021
       ],
       "stdout": "104857600"
     },
@@ -828,7 +828,7 @@
       "test": "C-large-1m",
       "command": "dotnet-http-client",
       "times": [
-        0.593702
+        1.004429
       ],
       "stdout": "104857600"
     },
@@ -836,7 +836,7 @@
       "test": "C-large-1m",
       "command": "python-httpx",
       "times": [
-        0.712854
+        1.13347
       ],
       "stdout": "104857600"
     },
@@ -844,7 +844,7 @@
       "test": "C-large-1m",
       "command": "python-niquests",
       "times": [
-        0.669424
+        1.108486
       ],
       "stdout": "104857600"
     },
@@ -852,7 +852,7 @@
       "test": "C-large-1m",
       "command": "python-requests",
       "times": [
-        0.739807
+        1.143713
       ],
       "stdout": "104857600"
     },
@@ -860,7 +860,7 @@
       "test": "C-large-1m",
       "command": "python-urllib",
       "times": [
-        0.635823
+        1.049363
       ],
       "stdout": "104857600"
     },
@@ -868,23 +868,23 @@
       "test": "C-large-1m",
       "command": "r-httr",
       "times": [
-        0.144079
+        2.296621
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 104857600"
     },
     {
       "test": "C-large-1m",
       "command": "r-httr2",
       "times": [
-        0.143606
+        2.547226
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 104857600"
     },
     {
       "test": "C-large-1m",
       "command": "rust-ureq",
       "times": [
-        0.501379
+        0.86011
       ],
       "stdout": "104857600"
     },
@@ -892,7 +892,7 @@
       "test": "C-large-1m",
       "command": "rust-reqwest",
       "times": [
-        0.477196
+        0.833012
       ],
       "stdout": "104857600"
     },
@@ -900,7 +900,7 @@
       "test": "C-large-1m",
       "command": "dlang-vibed",
       "times": [
-        0.510504
+        0.858866
       ],
       "stdout": "104857600"
     },
@@ -908,7 +908,7 @@
       "test": "C-large-1m",
       "command": "dlang-arsd",
       "times": [
-        0.495146
+        0.87463
       ],
       "stdout": "104857600"
     },
@@ -916,7 +916,7 @@
       "test": "C-large-1m",
       "command": "dlang-requests",
       "times": [
-        0.507794
+        0.876374
       ],
       "stdout": "104857600"
     },
@@ -924,7 +924,7 @@
       "test": "C-large-1m",
       "command": "dlang-ae-http",
       "times": [
-        0.517822
+        0.893519
       ],
       "stdout": "104857600"
     },
@@ -932,7 +932,7 @@
       "test": "C-large-1m",
       "command": "cpp-http-client",
       "times": [
-        0.522376
+        0.906711
       ],
       "stdout": "104857600"
     },
@@ -940,7 +940,7 @@
       "test": "C-large-1m",
       "command": "swift-urlsession",
       "times": [
-        0.534461
+        0.880958
       ],
       "stdout": "104857600"
     },
@@ -948,7 +948,7 @@
       "test": "C-large-1m",
       "command": "zig-http-client",
       "times": [
-        0.468736
+        0.826065
       ],
       "stdout": "104857600"
     },
@@ -956,7 +956,7 @@
       "test": "D-delay-10ms",
       "command": "go-http-client",
       "times": [
-        0.211865
+        0.214646
       ],
       "stdout": "400"
     },
@@ -964,7 +964,7 @@
       "test": "D-delay-10ms",
       "command": "dotnet-http-client",
       "times": [
-        0.301051
+        0.339913
       ],
       "stdout": "400"
     },
@@ -972,7 +972,7 @@
       "test": "D-delay-10ms",
       "command": "python-httpx",
       "times": [
-        0.375777
+        0.435927
       ],
       "stdout": "400"
     },
@@ -980,7 +980,7 @@
       "test": "D-delay-10ms",
       "command": "python-niquests",
       "times": [
-        0.369937
+        0.442484
       ],
       "stdout": "400"
     },
@@ -988,7 +988,7 @@
       "test": "D-delay-10ms",
       "command": "python-requests",
       "times": [
-        0.377643
+        0.443203
       ],
       "stdout": "400"
     },
@@ -996,7 +996,7 @@
       "test": "D-delay-10ms",
       "command": "python-urllib",
       "times": [
-        0.329617
+        0.376122
       ],
       "stdout": "400"
     },
@@ -1004,23 +1004,23 @@
       "test": "D-delay-10ms",
       "command": "r-httr",
       "times": [
-        0.142098
+        2.808018
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 400"
     },
     {
       "test": "D-delay-10ms",
       "command": "r-httr2",
       "times": [
-        0.142112
+        0.799171
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 400"
     },
     {
       "test": "D-delay-10ms",
       "command": "rust-ureq",
       "times": [
-        0.208675
+        0.2096
       ],
       "stdout": "400"
     },
@@ -1028,7 +1028,7 @@
       "test": "D-delay-10ms",
       "command": "rust-reqwest",
       "times": [
-        0.209905
+        0.211233
       ],
       "stdout": "400"
     },
@@ -1036,7 +1036,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-vibed",
       "times": [
-        0.208771
+        0.21184
       ],
       "stdout": "400"
     },
@@ -1044,7 +1044,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-arsd",
       "times": [
-        0.41617
+        0.417481
       ],
       "stdout": "400"
     },
@@ -1052,7 +1052,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-requests",
       "times": [
-        0.213557
+        0.215356
       ],
       "stdout": "400"
     },
@@ -1060,7 +1060,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-ae-http",
       "times": [
-        0.22723
+        0.239497
       ],
       "stdout": "400"
     },
@@ -1068,7 +1068,7 @@
       "test": "D-delay-10ms",
       "command": "cpp-http-client",
       "times": [
-        0.207424
+        0.209537
       ],
       "stdout": "400"
     },
@@ -1076,7 +1076,7 @@
       "test": "D-delay-10ms",
       "command": "swift-urlsession",
       "times": [
-        0.246327
+        0.271695
       ],
       "stdout": "400"
     },
@@ -1084,7 +1084,7 @@
       "test": "D-delay-10ms",
       "command": "zig-http-client",
       "times": [
-        0.209053
+        0.209477
       ],
       "stdout": "400"
     },
@@ -1092,7 +1092,7 @@
       "test": "error-status-404",
       "command": "go-http-client",
       "times": [
-        0.018933
+        0.037532
       ],
       "stdout": "1800"
     },
@@ -1100,7 +1100,7 @@
       "test": "error-status-404",
       "command": "dotnet-http-client",
       "times": [
-        0.096388
+        0.152574
       ],
       "stdout": "1800"
     },
@@ -1108,7 +1108,7 @@
       "test": "error-status-404",
       "command": "python-httpx",
       "times": [
-        0.192485
+        0.308449
       ],
       "stdout": "1800"
     },
@@ -1116,7 +1116,7 @@
       "test": "error-status-404",
       "command": "python-niquests",
       "times": [
-        0.204698
+        0.318853
       ],
       "stdout": "1800"
     },
@@ -1124,7 +1124,7 @@
       "test": "error-status-404",
       "command": "python-requests",
       "times": [
-        0.227891
+        0.349194
       ],
       "stdout": "1800"
     },
@@ -1132,7 +1132,7 @@
       "test": "error-status-404",
       "command": "python-urllib",
       "times": [
-        0.145711
+        0.226899
       ],
       "stdout": "1800"
     },
@@ -1140,23 +1140,23 @@
       "test": "error-status-404",
       "command": "r-httr",
       "times": [
-        0.135428
+        0.619459
       ],
-      "stdout": "Error in library(httr) : there is no package called \u2018httr\u2019 Execution halted"
+      "stdout": "[1] 1800"
     },
     {
       "test": "error-status-404",
       "command": "r-httr2",
       "times": [
-        0.137125
+        0.565874
       ],
-      "stdout": "Error in library(httr2) : there is no package called \u2018httr2\u2019 Execution halted"
+      "stdout": "[1] 0"
     },
     {
       "test": "error-status-404",
       "command": "rust-ureq",
       "times": [
-        0.012358
+        0.020745
       ],
       "stdout": "0"
     },
@@ -1164,7 +1164,7 @@
       "test": "error-status-404",
       "command": "rust-reqwest",
       "times": [
-        0.015027
+        0.026582
       ],
       "stdout": "1800"
     },
@@ -1172,7 +1172,7 @@
       "test": "error-status-404",
       "command": "dlang-vibed",
       "times": [
-        0.013677
+        0.025291
       ],
       "stdout": "1800"
     },
@@ -1180,7 +1180,7 @@
       "test": "error-status-404",
       "command": "dlang-arsd",
       "times": [
-        0.013957
+        0.024158
       ],
       "stdout": "1800"
     },
@@ -1188,7 +1188,7 @@
       "test": "error-status-404",
       "command": "dlang-requests",
       "times": [
-        0.01872
+        0.03159
       ],
       "stdout": "1800"
     },
@@ -1196,7 +1196,7 @@
       "test": "error-status-404",
       "command": "dlang-ae-http",
       "times": [
-        0.032288
+        0.055729
       ],
       "stdout": "1800"
     },
@@ -1204,7 +1204,7 @@
       "test": "error-status-404",
       "command": "cpp-http-client",
       "times": [
-        0.012118
+        0.018218
       ],
       "stdout": "1800"
     },
@@ -1212,7 +1212,7 @@
       "test": "error-status-404",
       "command": "swift-urlsession",
       "times": [
-        0.063247
+        0.117148
       ],
       "stdout": "1800"
     },
@@ -1220,7 +1220,7 @@
       "test": "error-status-404",
       "command": "zig-http-client",
       "times": [
-        0.012105
+        0.018763
       ],
       "stdout": "1800"
     }

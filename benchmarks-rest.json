@@ -4,7 +4,7 @@
       "test": "A-warm-1",
       "command": "go-http-client",
       "times": [
-        0.382428
+        0.787123
       ],
       "stdout": "10000"
     },
@@ -12,7 +12,7 @@
       "test": "A-warm-1",
       "command": "dotnet-http-client",
       "times": [
-        0.377532
+        0.947581
       ],
       "stdout": "10000"
     },
@@ -20,7 +20,7 @@
       "test": "A-warm-1",
       "command": "rust-ureq",
       "times": [
-        0.255473
+        0.465244
       ],
       "stdout": "10000"
     },
@@ -28,7 +28,7 @@
       "test": "A-warm-1",
       "command": "rust-reqwest",
       "times": [
-        0.29865
+        0.615239
       ],
       "stdout": "10000"
     },
@@ -36,7 +36,7 @@
       "test": "A-warm-1",
       "command": "dlang-vibed",
       "times": [
-        0.264806
+        0.517714
       ],
       "stdout": "10000"
     },
@@ -44,7 +44,7 @@
       "test": "A-warm-1",
       "command": "dlang-arsd",
       "times": [
-        0.280055
+        0.51046
       ],
       "stdout": "10000"
     },
@@ -52,7 +52,7 @@
       "test": "A-warm-1",
       "command": "dlang-requests",
       "times": [
-        0.37415
+        0.650063
       ],
       "stdout": "10000"
     },
@@ -60,7 +60,7 @@
       "test": "A-warm-1",
       "command": "dlang-ae-http",
       "times": [
-        0.821937
+        1.399569
       ],
       "stdout": "10000"
     },
@@ -68,7 +68,7 @@
       "test": "A-warm-1",
       "command": "cpp-http-client",
       "times": [
-        0.23635
+        0.39161
       ],
       "stdout": "10000"
     },
@@ -76,7 +76,7 @@
       "test": "A-warm-1",
       "command": "swift-urlsession",
       "times": [
-        1.231117
+        2.389626
       ],
       "stdout": "10000"
     },
@@ -84,7 +84,7 @@
       "test": "A-warm-1",
       "command": "zig-http-client",
       "times": [
-        0.230692
+        0.377359
       ],
       "stdout": "10000"
     },
@@ -92,7 +92,7 @@
       "test": "A-warm-10",
       "command": "go-http-client",
       "times": [
-        0.112658
+        0.199549
       ],
       "stdout": "10000"
     },
@@ -100,7 +100,7 @@
       "test": "A-warm-10",
       "command": "dotnet-http-client",
       "times": [
-        0.186042
+        0.297422
       ],
       "stdout": "10000"
     },
@@ -108,7 +108,7 @@
       "test": "A-warm-10",
       "command": "rust-ureq",
       "times": [
-        0.093087
+        0.155739
       ],
       "stdout": "10000"
     },
@@ -116,7 +116,7 @@
       "test": "A-warm-10",
       "command": "rust-reqwest",
       "times": [
-        0.087762
+        0.153077
       ],
       "stdout": "10000"
     },
@@ -124,7 +124,7 @@
       "test": "A-warm-10",
       "command": "dlang-vibed",
       "times": [
-        0.085101
+        0.221225
       ],
       "stdout": "10000"
     },
@@ -132,7 +132,7 @@
       "test": "A-warm-10",
       "command": "dlang-arsd",
       "times": [
-        0.116631
+        0.208381
       ],
       "stdout": "10000"
     },
@@ -140,7 +140,7 @@
       "test": "A-warm-10",
       "command": "dlang-requests",
       "times": [
-        0.115482
+        0.176241
       ],
       "stdout": "10000"
     },
@@ -148,7 +148,7 @@
       "test": "A-warm-10",
       "command": "dlang-ae-http",
       "times": [
-        0.569663
+        0.851184
       ],
       "stdout": "10000"
     },
@@ -156,7 +156,7 @@
       "test": "A-warm-10",
       "command": "cpp-http-client",
       "times": [
-        0.089567
+        0.143831
       ],
       "stdout": "10000"
     },
@@ -164,7 +164,7 @@
       "test": "A-warm-10",
       "command": "swift-urlsession",
       "times": [
-        0.844971
+        1.712249
       ],
       "stdout": "10000"
     },
@@ -172,7 +172,7 @@
       "test": "A-warm-10",
       "command": "zig-http-client",
       "times": [
-        0.087203
+        0.153512
       ],
       "stdout": "10000"
     },
@@ -180,7 +180,7 @@
       "test": "A-warm-100",
       "command": "go-http-client",
       "times": [
-        0.127342
+        0.195261
       ],
       "stdout": "10000"
     },
@@ -188,7 +188,7 @@
       "test": "A-warm-100",
       "command": "dotnet-http-client",
       "times": [
-        0.194355
+        0.292833
       ],
       "stdout": "10000"
     },
@@ -196,7 +196,7 @@
       "test": "A-warm-100",
       "command": "rust-ureq",
       "times": [
-        0.100814
+        0.173555
       ],
       "stdout": "10000"
     },
@@ -204,7 +204,7 @@
       "test": "A-warm-100",
       "command": "rust-reqwest",
       "times": [
-        0.088799
+        0.157795
       ],
       "stdout": "10000"
     },
@@ -212,7 +212,7 @@
       "test": "A-warm-100",
       "command": "dlang-vibed",
       "times": [
-        0.095064
+        0.218319
       ],
       "stdout": "10000"
     },
@@ -220,7 +220,7 @@
       "test": "A-warm-100",
       "command": "dlang-arsd",
       "times": [
-        0.104442
+        0.175371
       ],
       "stdout": "10000"
     },
@@ -228,7 +228,7 @@
       "test": "A-warm-100",
       "command": "dlang-requests",
       "times": [
-        0.139636
+        0.204835
       ],
       "stdout": "10000"
     },
@@ -236,7 +236,7 @@
       "test": "A-warm-100",
       "command": "dlang-ae-http",
       "times": [
-        0.569176
+        0.840727
       ],
       "stdout": "10000"
     },
@@ -244,7 +244,7 @@
       "test": "A-warm-100",
       "command": "cpp-http-client",
       "times": [
-        0.097366
+        0.150829
       ],
       "stdout": "10000"
     },
@@ -252,7 +252,7 @@
       "test": "A-warm-100",
       "command": "swift-urlsession",
       "times": [
-        0.853597
+        1.715812
       ],
       "stdout": "10000"
     },
@@ -260,7 +260,7 @@
       "test": "A-warm-100",
       "command": "zig-http-client",
       "times": [
-        0.108666
+        0.169671
       ],
       "stdout": "10000"
     },
@@ -268,7 +268,7 @@
       "test": "A-warm-500",
       "command": "go-http-client",
       "times": [
-        0.090551
+        0.12913
       ],
       "stdout": "4000"
     },
@@ -276,7 +276,7 @@
       "test": "A-warm-500",
       "command": "dotnet-http-client",
       "times": [
-        0.173634
+        0.243753
       ],
       "stdout": "4000"
     },
@@ -284,7 +284,7 @@
       "test": "A-warm-500",
       "command": "rust-ureq",
       "times": [
-        0.079498
+        0.120414
       ],
       "stdout": "4000"
     },
@@ -292,7 +292,7 @@
       "test": "A-warm-500",
       "command": "rust-reqwest",
       "times": [
-        0.08898
+        0.124658
       ],
       "stdout": "4000"
     },
@@ -300,7 +300,7 @@
       "test": "A-warm-500",
       "command": "dlang-vibed",
       "times": [
-        0.098513
+        0.155968
       ],
       "stdout": "4000"
     },
@@ -308,7 +308,7 @@
       "test": "A-warm-500",
       "command": "dlang-arsd",
       "times": [
-        0.045049
+        0.092952
       ],
       "stdout": "4000"
     },
@@ -316,7 +316,7 @@
       "test": "A-warm-500",
       "command": "dlang-requests",
       "times": [
-        0.11672
+        0.157321
       ],
       "stdout": "4000"
     },
@@ -324,7 +324,7 @@
       "test": "A-warm-500",
       "command": "dlang-ae-http",
       "times": [
-        0.241922
+        0.345898
       ],
       "stdout": "4000"
     },
@@ -332,7 +332,7 @@
       "test": "A-warm-500",
       "command": "cpp-http-client",
       "times": [
-        0.070588
+        0.105184
       ],
       "stdout": "4000"
     },
@@ -340,7 +340,7 @@
       "test": "A-warm-500",
       "command": "swift-urlsession",
       "times": [
-        0.364671
+        0.705919
       ],
       "stdout": "4000"
     },
@@ -348,7 +348,7 @@
       "test": "A-warm-500",
       "command": "zig-http-client",
       "times": [
-        0.106579
+        0.160147
       ],
       "stdout": "4000"
     },
@@ -356,7 +356,7 @@
       "test": "C-body-64k",
       "command": "go-http-client",
       "times": [
-        0.401781
+        0.672272
       ],
       "stdout": "65536000"
     },
@@ -364,7 +364,7 @@
       "test": "C-body-64k",
       "command": "dotnet-http-client",
       "times": [
-        0.409484
+        0.697827
       ],
       "stdout": "65536000"
     },
@@ -372,7 +372,7 @@
       "test": "C-body-64k",
       "command": "rust-ureq",
       "times": [
-        0.309128
+        0.554713
       ],
       "stdout": "65536000"
     },
@@ -380,7 +380,7 @@
       "test": "C-body-64k",
       "command": "rust-reqwest",
       "times": [
-        0.314364
+        0.564072
       ],
       "stdout": "65536000"
     },
@@ -388,7 +388,7 @@
       "test": "C-body-64k",
       "command": "dlang-vibed",
       "times": [
-        0.312864
+        0.543311
       ],
       "stdout": "65536000"
     },
@@ -396,7 +396,7 @@
       "test": "C-body-64k",
       "command": "dlang-arsd",
       "times": [
-        0.328394
+        0.579109
       ],
       "stdout": "65536000"
     },
@@ -404,7 +404,7 @@
       "test": "C-body-64k",
       "command": "dlang-requests",
       "times": [
-        0.323176
+        0.559579
       ],
       "stdout": "65536000"
     },
@@ -412,7 +412,7 @@
       "test": "C-body-64k",
       "command": "dlang-ae-http",
       "times": [
-        0.410399
+        0.668787
       ],
       "stdout": "65536000"
     },
@@ -420,7 +420,7 @@
       "test": "C-body-64k",
       "command": "cpp-http-client",
       "times": [
-        0.308345
+        0.542954
       ],
       "stdout": "65536000"
     },
@@ -428,7 +428,7 @@
       "test": "C-body-64k",
       "command": "swift-urlsession",
       "times": [
-        0.417209
+        0.705549
       ],
       "stdout": "65536000"
     },
@@ -436,7 +436,7 @@
       "test": "C-body-64k",
       "command": "zig-http-client",
       "times": [
-        0.310472
+        0.533154
       ],
       "stdout": "65536000"
     },
@@ -444,7 +444,7 @@
       "test": "C-json-1k",
       "command": "go-http-client",
       "times": [
-        0.041599
+        0.059219
       ],
       "stdout": "1024000"
     },
@@ -452,7 +452,7 @@
       "test": "C-json-1k",
       "command": "dotnet-http-client",
       "times": [
-        0.123684
+        0.18096
       ],
       "stdout": "1024000"
     },
@@ -460,7 +460,7 @@
       "test": "C-json-1k",
       "command": "rust-ureq",
       "times": [
-        0.030207
+        0.048175
       ],
       "stdout": "1024000"
     },
@@ -468,7 +468,7 @@
       "test": "C-json-1k",
       "command": "rust-reqwest",
       "times": [
-        0.028926
+        0.048196
       ],
       "stdout": "1024000"
     },
@@ -476,7 +476,7 @@
       "test": "C-json-1k",
       "command": "dlang-vibed",
       "times": [
-        0.030831
+        0.05466
       ],
       "stdout": "1024000"
     },
@@ -484,7 +484,7 @@
       "test": "C-json-1k",
       "command": "dlang-arsd",
       "times": [
-        0.026414
+        0.046969
       ],
       "stdout": "1024000"
     },
@@ -492,7 +492,7 @@
       "test": "C-json-1k",
       "command": "dlang-requests",
       "times": [
-        0.043324
+        0.067504
       ],
       "stdout": "1024000"
     },
@@ -500,7 +500,7 @@
       "test": "C-json-1k",
       "command": "dlang-ae-http",
       "times": [
-        0.11465
+        0.160558
       ],
       "stdout": "1024000"
     },
@@ -508,7 +508,7 @@
       "test": "C-json-1k",
       "command": "cpp-http-client",
       "times": [
-        0.026236
+        0.03738
       ],
       "stdout": "1024000"
     },
@@ -516,7 +516,7 @@
       "test": "C-json-1k",
       "command": "swift-urlsession",
       "times": [
-        0.218388
+        0.369695
       ],
       "stdout": "1024000"
     },
@@ -524,7 +524,7 @@
       "test": "C-json-1k",
       "command": "zig-http-client",
       "times": [
-        0.034594
+        0.048886
       ],
       "stdout": "1024000"
     },
@@ -532,7 +532,7 @@
       "test": "C-large-1m",
       "command": "go-http-client",
       "times": [
-        0.53052
+        0.922021
       ],
       "stdout": "104857600"
     },
@@ -540,7 +540,7 @@
       "test": "C-large-1m",
       "command": "dotnet-http-client",
       "times": [
-        0.593702
+        1.004429
       ],
       "stdout": "104857600"
     },
@@ -548,7 +548,7 @@
       "test": "C-large-1m",
       "command": "rust-ureq",
       "times": [
-        0.501379
+        0.86011
       ],
       "stdout": "104857600"
     },
@@ -556,7 +556,7 @@
       "test": "C-large-1m",
       "command": "rust-reqwest",
       "times": [
-        0.477196
+        0.833012
       ],
       "stdout": "104857600"
     },
@@ -564,7 +564,7 @@
       "test": "C-large-1m",
       "command": "dlang-vibed",
       "times": [
-        0.510504
+        0.858866
       ],
       "stdout": "104857600"
     },
@@ -572,7 +572,7 @@
       "test": "C-large-1m",
       "command": "dlang-arsd",
       "times": [
-        0.495146
+        0.87463
       ],
       "stdout": "104857600"
     },
@@ -580,7 +580,7 @@
       "test": "C-large-1m",
       "command": "dlang-requests",
       "times": [
-        0.507794
+        0.876374
       ],
       "stdout": "104857600"
     },
@@ -588,7 +588,7 @@
       "test": "C-large-1m",
       "command": "dlang-ae-http",
       "times": [
-        0.517822
+        0.893519
       ],
       "stdout": "104857600"
     },
@@ -596,7 +596,7 @@
       "test": "C-large-1m",
       "command": "cpp-http-client",
       "times": [
-        0.522376
+        0.906711
       ],
       "stdout": "104857600"
     },
@@ -604,7 +604,7 @@
       "test": "C-large-1m",
       "command": "swift-urlsession",
       "times": [
-        0.534461
+        0.880958
       ],
       "stdout": "104857600"
     },
@@ -612,7 +612,7 @@
       "test": "C-large-1m",
       "command": "zig-http-client",
       "times": [
-        0.468736
+        0.826065
       ],
       "stdout": "104857600"
     },
@@ -620,7 +620,7 @@
       "test": "D-delay-10ms",
       "command": "go-http-client",
       "times": [
-        0.211865
+        0.214646
       ],
       "stdout": "400"
     },
@@ -628,7 +628,7 @@
       "test": "D-delay-10ms",
       "command": "dotnet-http-client",
       "times": [
-        0.301051
+        0.339913
       ],
       "stdout": "400"
     },
@@ -636,7 +636,7 @@
       "test": "D-delay-10ms",
       "command": "rust-ureq",
       "times": [
-        0.208675
+        0.2096
       ],
       "stdout": "400"
     },
@@ -644,7 +644,7 @@
       "test": "D-delay-10ms",
       "command": "rust-reqwest",
       "times": [
-        0.209905
+        0.211233
       ],
       "stdout": "400"
     },
@@ -652,7 +652,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-vibed",
       "times": [
-        0.208771
+        0.21184
       ],
       "stdout": "400"
     },
@@ -660,7 +660,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-arsd",
       "times": [
-        0.41617
+        0.417481
       ],
       "stdout": "400"
     },
@@ -668,7 +668,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-requests",
       "times": [
-        0.213557
+        0.215356
       ],
       "stdout": "400"
     },
@@ -676,7 +676,7 @@
       "test": "D-delay-10ms",
       "command": "dlang-ae-http",
       "times": [
-        0.22723
+        0.239497
       ],
       "stdout": "400"
     },
@@ -684,7 +684,7 @@
       "test": "D-delay-10ms",
       "command": "cpp-http-client",
       "times": [
-        0.207424
+        0.209537
       ],
       "stdout": "400"
     },
@@ -692,7 +692,7 @@
       "test": "D-delay-10ms",
       "command": "swift-urlsession",
       "times": [
-        0.246327
+        0.271695
       ],
       "stdout": "400"
     },
@@ -700,7 +700,7 @@
       "test": "D-delay-10ms",
       "command": "zig-http-client",
       "times": [
-        0.209053
+        0.209477
       ],
       "stdout": "400"
     },
@@ -708,7 +708,7 @@
       "test": "error-status-404",
       "command": "go-http-client",
       "times": [
-        0.018933
+        0.037532
       ],
       "stdout": "1800"
     },
@@ -716,7 +716,7 @@
       "test": "error-status-404",
       "command": "dotnet-http-client",
       "times": [
-        0.096388
+        0.152574
       ],
       "stdout": "1800"
     },
@@ -724,7 +724,7 @@
       "test": "error-status-404",
       "command": "rust-ureq",
       "times": [
-        0.012358
+        0.020745
       ],
       "stdout": "0"
     },
@@ -732,7 +732,7 @@
       "test": "error-status-404",
       "command": "rust-reqwest",
       "times": [
-        0.015027
+        0.026582
       ],
       "stdout": "1800"
     },
@@ -740,7 +740,7 @@
       "test": "error-status-404",
       "command": "dlang-vibed",
       "times": [
-        0.013677
+        0.025291
       ],
       "stdout": "1800"
     },
@@ -748,7 +748,7 @@
       "test": "error-status-404",
       "command": "dlang-arsd",
       "times": [
-        0.013957
+        0.024158
       ],
       "stdout": "1800"
     },
@@ -756,7 +756,7 @@
       "test": "error-status-404",
       "command": "dlang-requests",
       "times": [
-        0.01872
+        0.03159
       ],
       "stdout": "1800"
     },
@@ -764,7 +764,7 @@
       "test": "error-status-404",
       "command": "dlang-ae-http",
       "times": [
-        0.032288
+        0.055729
       ],
       "stdout": "1800"
     },
@@ -772,7 +772,7 @@
       "test": "error-status-404",
       "command": "cpp-http-client",
       "times": [
-        0.012118
+        0.018218
       ],
       "stdout": "1800"
     },
@@ -780,7 +780,7 @@
       "test": "error-status-404",
       "command": "swift-urlsession",
       "times": [
-        0.063247
+        0.117148
       ],
       "stdout": "1800"
     },
@@ -788,7 +788,7 @@
       "test": "error-status-404",
       "command": "zig-http-client",
       "times": [
-        0.012105
+        0.018763
       ],
       "stdout": "1800"
     }
