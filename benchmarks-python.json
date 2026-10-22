@@ -1,0 +1,292 @@
+{
+  "results": [
+    {
+      "test": "A-warm-1",
+      "command": "python-httpx",
+      "times": [
+        2.970359
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-1",
+      "command": "python-niquests",
+      "times": [
+        3.577002
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-1",
+      "command": "python-requests",
+      "times": [
+        4.413
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-1",
+      "command": "python-urllib",
+      "times": [
+        2.37391
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-10",
+      "command": "python-httpx",
+      "times": [
+        3.527381
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-10",
+      "command": "python-niquests",
+      "times": [
+        3.466257
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-10",
+      "command": "python-requests",
+      "times": [
+        4.52451
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-10",
+      "command": "python-urllib",
+      "times": [
+        2.310936
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-100",
+      "command": "python-httpx",
+      "times": [
+        3.580888
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-100",
+      "command": "python-niquests",
+      "times": [
+        3.781056
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-100",
+      "command": "python-requests",
+      "times": [
+        4.95391
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-100",
+      "command": "python-urllib",
+      "times": [
+        2.425771
+      ],
+      "stdout": "10000"
+    },
+    {
+      "test": "A-warm-500",
+      "command": "python-httpx",
+      "times": [
+        1.733732
+      ],
+      "stdout": "4000"
+    },
+    {
+      "test": "A-warm-500",
+      "command": "python-niquests",
+      "times": [
+        1.757341
+      ],
+      "stdout": "4000"
+    },
+    {
+      "test": "A-warm-500",
+      "command": "python-requests",
+      "times": [
+        2.07516
+      ],
+      "stdout": "4000"
+    },
+    {
+      "test": "A-warm-500",
+      "command": "python-urllib",
+      "times": [
+        1.17064
+      ],
+      "stdout": "4000"
+    },
+    {
+      "test": "C-body-64k",
+      "command": "python-httpx",
+      "times": [
+        1.359786
+      ],
+      "stdout": "65536000"
+    },
+    {
+      "test": "C-body-64k",
+      "command": "python-niquests",
+      "times": [
+        1.183636
+      ],
+      "stdout": "65536000"
+    },
+    {
+      "test": "C-body-64k",
+      "command": "python-requests",
+      "times": [
+        1.408052
+      ],
+      "stdout": "65536000"
+    },
+    {
+      "test": "C-body-64k",
+      "command": "python-urllib",
+      "times": [
+        0.92993
+      ],
+      "stdout": "65536000"
+    },
+    {
+      "test": "C-json-1k",
+      "command": "python-httpx",
+      "times": [
+        0.937538
+      ],
+      "stdout": "1024000"
+    },
+    {
+      "test": "C-json-1k",
+      "command": "python-niquests",
+      "times": [
+        0.905508
+      ],
+      "stdout": "1024000"
+    },
+    {
+      "test": "C-json-1k",
+      "command": "python-requests",
+      "times": [
+        1.087635
+      ],
+      "stdout": "1024000"
+    },
+    {
+      "test": "C-json-1k",
+      "command": "python-urllib",
+      "times": [
+        0.626004
+      ],
+      "stdout": "1024000"
+    },
+    {
+      "test": "C-large-1m",
+      "command": "python-httpx",
+      "times": [
+        1.098701
+      ],
+      "stdout": "104857600"
+    },
+    {
+      "test": "C-large-1m",
+      "command": "python-niquests",
+      "times": [
+        1.055525
+      ],
+      "stdout": "104857600"
+    },
+    {
+      "test": "C-large-1m",
+      "command": "python-requests",
+      "times": [
+        1.301238
+      ],
+      "stdout": "104857600"
+    },
+    {
+      "test": "C-large-1m",
+      "command": "python-urllib",
+      "times": [
+        1.002562
+      ],
+      "stdout": "104857600"
+    },
+    {
+      "test": "D-delay-10ms",
+      "command": "python-httpx",
+      "times": [
+        0.41885
+      ],
+      "stdout": "400"
+    },
+    {
+      "test": "D-delay-10ms",
+      "command": "python-niquests",
+      "times": [
+        0.413959
+      ],
+      "stdout": "400"
+    },
+    {
+      "test": "D-delay-10ms",
+      "command": "python-requests",
+      "times": [
+        0.413178
+      ],
+      "stdout": "400"
+    },
+    {
+      "test": "D-delay-10ms",
+      "command": "python-urllib",
+      "times": [
+        0.356543
+      ],
+      "stdout": "400"
+    },
+    {
+      "test": "error-status-404",
+      "command": "python-httpx",
+      "times": [
+        0.295902
+      ],
+      "stdout": "1800"
+    },
+    {
+      "test": "error-status-404",
+      "command": "python-niquests",
+      "times": [
+        0.30342
+      ],
+      "stdout": "1800"
+    },
+    {
+      "test": "error-status-404",
+      "command": "python-requests",
+      "times": [
+        0.339938
+      ],
+      "stdout": "1800"
+    },
+    {
+      "test": "error-status-404",
+      "command": "python-urllib",
+      "times": [
+        0.221651
+      ],
+      "stdout": "1800"
+    }
+  ]
+}
