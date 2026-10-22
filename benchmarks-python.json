@@ -4,7 +4,7 @@
       "test": "A-warm-1",
       "command": "python-httpx",
       "times": [
-        2.970359
+        1.667858
       ],
       "stdout": "10000"
     },
@@ -12,7 +12,7 @@
       "test": "A-warm-1",
       "command": "python-niquests",
       "times": [
-        3.577002
+        1.881602
       ],
       "stdout": "10000"
     },
@@ -20,7 +20,7 @@
       "test": "A-warm-1",
       "command": "python-requests",
       "times": [
-        4.413
+        2.298075
       ],
       "stdout": "10000"
     },
@@ -28,7 +28,7 @@
       "test": "A-warm-1",
       "command": "python-urllib",
       "times": [
-        2.37391
+        1.121607
       ],
       "stdout": "10000"
     },
@@ -36,7 +36,7 @@
       "test": "A-warm-10",
       "command": "python-httpx",
       "times": [
-        3.527381
+        1.872782
       ],
       "stdout": "10000"
     },
@@ -44,7 +44,7 @@
       "test": "A-warm-10",
       "command": "python-niquests",
       "times": [
-        3.466257
+        2.017692
       ],
       "stdout": "10000"
     },
@@ -52,7 +52,7 @@
       "test": "A-warm-10",
       "command": "python-requests",
       "times": [
-        4.52451
+        2.575727
       ],
       "stdout": "10000"
     },
@@ -60,7 +60,7 @@
       "test": "A-warm-10",
       "command": "python-urllib",
       "times": [
-        2.310936
+        1.257917
       ],
       "stdout": "10000"
     },
@@ -68,7 +68,7 @@
       "test": "A-warm-100",
       "command": "python-httpx",
       "times": [
-        3.580888
+        2.011701
       ],
       "stdout": "10000"
     },
@@ -76,7 +76,7 @@
       "test": "A-warm-100",
       "command": "python-niquests",
       "times": [
-        3.781056
+        2.352393
       ],
       "stdout": "10000"
     },
@@ -84,7 +84,7 @@
       "test": "A-warm-100",
       "command": "python-requests",
       "times": [
-        4.95391
+        2.933133
       ],
       "stdout": "10000"
     },
@@ -92,7 +92,7 @@
       "test": "A-warm-100",
       "command": "python-urllib",
       "times": [
-        2.425771
+        1.444735
       ],
       "stdout": "10000"
     },
@@ -100,7 +100,7 @@
       "test": "A-warm-500",
       "command": "python-httpx",
       "times": [
-        1.733732
+        1.175412
       ],
       "stdout": "4000"
     },
@@ -108,7 +108,7 @@
       "test": "A-warm-500",
       "command": "python-niquests",
       "times": [
-        1.757341
+        1.071069
       ],
       "stdout": "4000"
     },
@@ -116,7 +116,7 @@
       "test": "A-warm-500",
       "command": "python-requests",
       "times": [
-        2.07516
+        1.34273
       ],
       "stdout": "4000"
     },
@@ -124,7 +124,7 @@
       "test": "A-warm-500",
       "command": "python-urllib",
       "times": [
-        1.17064
+        0.80374
       ],
       "stdout": "4000"
     },
@@ -132,7 +132,7 @@
       "test": "C-body-64k",
       "command": "python-httpx",
       "times": [
-        1.359786
+        0.84168
       ],
       "stdout": "65536000"
     },
@@ -140,7 +140,7 @@
       "test": "C-body-64k",
       "command": "python-niquests",
       "times": [
-        1.183636
+        0.792083
       ],
       "stdout": "65536000"
     },
@@ -148,7 +148,7 @@
       "test": "C-body-64k",
       "command": "python-requests",
       "times": [
-        1.408052
+        0.895038
       ],
       "stdout": "65536000"
     },
@@ -156,7 +156,7 @@
       "test": "C-body-64k",
       "command": "python-urllib",
       "times": [
-        0.92993
+        0.596902
       ],
       "stdout": "65536000"
     },
@@ -164,7 +164,7 @@
       "test": "C-json-1k",
       "command": "python-httpx",
       "times": [
-        0.937538
+        0.558883
       ],
       "stdout": "1024000"
     },
@@ -172,7 +172,7 @@
       "test": "C-json-1k",
       "command": "python-niquests",
       "times": [
-        0.905508
+        0.651297
       ],
       "stdout": "1024000"
     },
@@ -180,7 +180,7 @@
       "test": "C-json-1k",
       "command": "python-requests",
       "times": [
-        1.087635
+        0.725369
       ],
       "stdout": "1024000"
     },
@@ -188,7 +188,7 @@
       "test": "C-json-1k",
       "command": "python-urllib",
       "times": [
-        0.626004
+        0.418483
       ],
       "stdout": "1024000"
     },
@@ -196,7 +196,7 @@
       "test": "C-large-1m",
       "command": "python-httpx",
       "times": [
-        1.098701
+        0.712854
       ],
       "stdout": "104857600"
     },
@@ -204,7 +204,7 @@
       "test": "C-large-1m",
       "command": "python-niquests",
       "times": [
-        1.055525
+        0.669424
       ],
       "stdout": "104857600"
     },
@@ -212,7 +212,7 @@
       "test": "C-large-1m",
       "command": "python-requests",
       "times": [
-        1.301238
+        0.739807
       ],
       "stdout": "104857600"
     },
@@ -220,7 +220,7 @@
       "test": "C-large-1m",
       "command": "python-urllib",
       "times": [
-        1.002562
+        0.635823
       ],
       "stdout": "104857600"
     },
@@ -228,7 +228,7 @@
       "test": "D-delay-10ms",
       "command": "python-httpx",
       "times": [
-        0.41885
+        0.375777
       ],
       "stdout": "400"
     },
@@ -236,7 +236,7 @@
       "test": "D-delay-10ms",
       "command": "python-niquests",
       "times": [
-        0.413959
+        0.369937
       ],
       "stdout": "400"
     },
@@ -244,7 +244,7 @@
       "test": "D-delay-10ms",
       "command": "python-requests",
       "times": [
-        0.413178
+        0.377643
       ],
       "stdout": "400"
     },
@@ -252,7 +252,7 @@
       "test": "D-delay-10ms",
       "command": "python-urllib",
       "times": [
-        0.356543
+        0.329617
       ],
       "stdout": "400"
     },
@@ -260,7 +260,7 @@
       "test": "error-status-404",
       "command": "python-httpx",
       "times": [
-        0.295902
+        0.192485
       ],
       "stdout": "1800"
     },
@@ -268,7 +268,7 @@
       "test": "error-status-404",
       "command": "python-niquests",
       "times": [
-        0.30342
+        0.204698
       ],
       "stdout": "1800"
     },
@@ -276,7 +276,7 @@
       "test": "error-status-404",
       "command": "python-requests",
       "times": [
-        0.339938
+        0.227891
       ],
       "stdout": "1800"
     },
@@ -284,7 +284,7 @@
       "test": "error-status-404",
       "command": "python-urllib",
       "times": [
-        0.221651
+        0.145711
       ],
       "stdout": "1800"
     }
