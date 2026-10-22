@@ -1,0 +1,4 @@
+/swift-urlsession
+*.o
+*.swiftmodule
+*.swiftdoc

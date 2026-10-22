@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2026, Sergei Giniatulin",
+	"dependencies": {
+		"ae": "~>0.0.3928"
+	},
+	"description": "HTTP client benchmark using ae:http.",
+	"license": "proprietary",
+	"name": "dlang-ae-http"
+}

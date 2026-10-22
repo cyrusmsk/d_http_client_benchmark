@@ -4,14 +4,26 @@ This repository contains a HTTP client implementation for comparing the client's
 
 ### Prerequisites
 
-- D, Rust, Go, Python, R
-- [Hyperfine](https://github.com/sharkdp/hyperfine) (for benchmarking)
+- D, Rust, Go, Python, R, C++, Swift, Zig
+- [`matplotlib`](https://matplotlib.org/) (for plotting)
 
 ### Results
 
-![plot_whisker](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.png)
+All results are published on the [`output`](https://github.com/cyrusmsk/d_http_client_benchmark/tree/output) branch.
 
-Results in a [table](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.md)
+Python clients:
+
+![python](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks-python.png)
+
+R clients:
+
+![r](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks-r.png)
+
+Other languages (D, Go, Rust, C#, C++, Swift, Zig):
+
+![rest](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks-rest.png)
+
+Full comparison of all clients in a single plot: [benchmarks.png](https://raw.githubusercontent.com/cyrusmsk/d_http_client_benchmark/output/benchmarks.png)
 
 ### Benchmarking
 
@@ -22,16 +34,53 @@ chmod +x bench.sh
 ./bench.sh
 ```
 
-The result will be saved to `benchmarks.md` and `benchmarks.json`.
+The suite is split into separate tests and the result is saved to `benchmarks.json`. Set `BENCH_SCALE=0` for a fast smoke run:
+
+```sh
+BENCH_SCALE=0 ./bench.sh
+```
+
+Clients honor these environment variables:
+
+- `BENCH_PATH` — endpoint path, default `/ping`
+- `BENCH_COUNT` — number of requests, default `5000`
+- `BENCH_CONCURRENCY` — in-flight requests, default `1`
+
+### Server endpoints
+
+The server exposes benchmark endpoints used by the suite:
+
+| Endpoint | Response | Purpose |
+|---|---:|---|
+| `/ping` | `OK` | Warm keep-alive overhead |
+| `/json` | ~1 KiB JSON | JSON parsing overhead |
+| `/download` | 64 KiB binary | Body throughput |
+| `/large?size=1048576` | 1 MiB binary | Large response throughput |
+| `/delay?ms=10` | `OK` after delay | Latency/concurrency behavior |
+| `/echo` | request body | Upload handling |
+| `/status/404` | HTTP 404 | Error status handling |
+| `/status/500` | HTTP 500 | Server error handling |
 
 ### Plotting
 
-Use the [JSON data](https://github.com/sharkdp/hyperfine#json) along with the [scripts](https://github.com/sharkdp/hyperfine/tree/master/scripts) from the `hyperfine` examples to plot data using [`matplotlib`](https://matplotlib.org/). For example:
+Results are stored in `benchmarks.json`, `benchmarks-python.json`, `benchmarks-r.json`, and `benchmarks-rest.json`.
+
+Plots are stacked bars:
+
+- x-axis: HTTP client solution
+- bar segments: benchmark test
+- y-axis: elapsed seconds
+
+To render all plots:
 
 ```sh
-git clone --depth 1 https://github.com/sharkdp/hyperfine
-python hyperfine/scripts/plot_whisker.py benchmarks.json
+python plot_whisker.py benchmarks.json -o benchmarks.png
+python plot_whisker.py benchmarks-python.json -o benchmarks-python.png
+python plot_whisker.py benchmarks-r.json -o benchmarks-r.png
+python plot_whisker.py benchmarks-rest.json -o benchmarks-rest.png
 ```
+
+The workflow generates the overall plot plus separate `python`, `r`, and `rest` plots.
 
 ### TODO
 Add:

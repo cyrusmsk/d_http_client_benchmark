@@ -1,0 +1,5 @@
+/zig-http-client
+*.o
+*.d
+zig-cache/
+zig-out/

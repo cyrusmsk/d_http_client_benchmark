@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-ae-http
+dlang-ae-http.so
+dlang-ae-http.dylib
+dlang-ae-http.dll
+dlang-ae-http.a
+dlang-ae-http.lib
+dlang-ae-http-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
