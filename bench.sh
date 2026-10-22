@@ -84,7 +84,7 @@ for go_bin in "${go_bins[@]}"; do
   names+=("$go_bin"); cmds+=("${cpwd}/${go_bin}/${go_bin}")
 done
 for dotnet_bin in "${dotnet_bins[@]}"; do
-  names+=("$dotnet_bin"); cmds+=("${cpwd}/${dotnet_bin}/bin/Release/net8.0/${dotnet_bin}")
+  names+=("$dotnet_bin"); cmds+=("${cpwd}/${dotnet_bin}/bin/Release/net10.0/${dotnet_bin}")
 done
 for python_bin in "${python_bins[@]}"; do
   names+=("$python_bin"); cmds+=("python ${cpwd}/${python_bin}/${python_bin}.py")
